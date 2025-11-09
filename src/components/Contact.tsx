@@ -31,7 +31,7 @@ const Contact = () => {
                   <Phone className="w-7 h-7 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Téléphone</h3>
-                <p className="text-muted-foreground">+33 1 23 45 67 89</p>
+                <p className="text-muted-foreground">07 68 07 97 64</p>
               </div>
 
               <div className="text-center">
@@ -39,7 +39,7 @@ const Contact = () => {
                   <MapPin className="w-7 h-7 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Adresse</h3>
-                <p className="text-muted-foreground">Paris, France</p>
+                <p className="text-muted-foreground">Bergerac, France</p>
               </div>
             </div>
 
