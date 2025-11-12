@@ -17,19 +17,9 @@ const cuisines = [
     description: "Cuisine française, sénégalaise, ivoirienne... Un tour du monde dans votre assiette",
   },
   {
-    emoji: "🍕",
-    title: "Pizzas Gourmandes",
-    description: "Recettes revisitées avec des produits de qualité",
-  },
-  {
     emoji: "🍜",
     title: "Woks & Nouilles",
     description: "Nouilles sautées et woks aux légumes croquants",
-  },
-  {
-    emoji: "🥙",
-    title: "Street Food",
-    description: "Wraps, sandwichs et plats nomades pour vos pauses déjeuner",
   },
 ];
 

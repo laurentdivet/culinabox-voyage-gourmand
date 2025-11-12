@@ -35,7 +35,7 @@ const Concept = () => {
               Diversité Culturelle
             </h3>
             <p className="text-muted-foreground">
-              Sushis, poké bowls, plats traditionnels français et sénégalais... 
+              Sushis, poké bowls, plats traditionnels français et du Monde... 
               Un nouveau voyage culinaire chaque jour !
             </p>
           </div>
