@@ -1,4 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
@@ -13,28 +22,77 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2 text-sm opacity-90">
-              <li><a href="#concept" className="hover:text-secondary transition-colors">Le Concept</a></li>
-              <li><a href="#varietes" className="hover:text-secondary transition-colors">Nos Plats</a></li>
-              <li><a href="#fonctionnement" className="hover:text-secondary transition-colors">Comment ça marche</a></li>
-              <li><a href="#contact" className="hover:text-secondary transition-colors">Contact</a></li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("concept")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Le Concept
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("varietes")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Nos Plats
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("fonctionnement")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Comment ça marche
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("contact")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Contact
+                </button>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Professionnels</h4>
             <ul className="space-y-2 text-sm opacity-90">
-              <li><a href="#contact" className="hover:text-secondary transition-colors">Devenir partenaire</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">Espace entreprise</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">Supermarchés</a></li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("contact")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Devenir partenaire
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("contact")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Espace entreprise
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("contact")} 
+                  className="hover:text-secondary transition-colors cursor-pointer"
+                >
+                  Supermarchés
+                </button>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Légal</h4>
             <ul className="space-y-2 text-sm opacity-90">
-              <li><a href="#mentions-legales" className="hover:text-secondary transition-colors">Mentions légales</a></li>
-              <li><a href="#confidentialite" className="hover:text-secondary transition-colors">Politique de confidentialité</a></li>
-              <li><a href="#cgv" className="hover:text-secondary transition-colors">CGV</a></li>
+              <li><Link to="/legal#mentions-legales" className="hover:text-secondary transition-colors">Mentions légales</Link></li>
+              <li><Link to="/legal#confidentialite" className="hover:text-secondary transition-colors">Politique de confidentialité</Link></li>
+              <li><Link to="/legal#cgv" className="hover:text-secondary transition-colors">CGV</Link></li>
             </ul>
           </div>
         </div>

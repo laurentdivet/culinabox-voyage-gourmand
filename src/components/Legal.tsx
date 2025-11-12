@@ -1,4 +1,24 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Legal = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll vers la section si un hash est présent dans l'URL
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    } else {
+      // Scroll vers le haut de la page si aucun hash
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.hash]);
+
   return (
     <section id="legal" className="py-20 bg-background">
       <div className="container mx-auto px-4">
