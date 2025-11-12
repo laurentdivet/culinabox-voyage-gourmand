@@ -18,11 +18,18 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <img
-            src={logo}
-            alt="Délice'Go Logo"
-            className="w-96 h-96 mx-auto mb-8 drop-shadow-2xl"
-          />
+          <div className="flex gap-8 justify-center items-center mb-8">
+            <img
+              src={logo}
+              alt="Délice'Go Logo"
+              className="w-96 h-96 drop-shadow-2xl"
+            />
+            <img
+              src={logo}
+              alt="Délice'Go Logo"
+              className="w-96 h-96 drop-shadow-2xl"
+            />
+          </div>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Des plats frais et variés préparés quotidiennement dans notre laboratoire certifié,
             livrés dans vos supermarchés partenaires
