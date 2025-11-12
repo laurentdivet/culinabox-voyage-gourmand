@@ -56,9 +56,10 @@ const Legal = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-3">Hébergement</h3>
                 <p>
                   Le site est hébergé par :<br />
-                  [Nom de l'hébergeur]<br />
-                  [Adresse de l'hébergeur]<br />
-                  [Téléphone de l'hébergeur]
+                  OVH<br />
+                  2 rue Kellermann<br />
+                  59100 Roubaix, France<br />
+                  Téléphone : 1007
                 </p>
               </div>
 
@@ -222,7 +223,7 @@ const Legal = () => {
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">Article 7 - Paiement</h3>
                 <p>
-                  Pour les particuliers : le paiement s'effectue directement en caisse du supermarché partenaire.<br />
+                  Pour les particuliers : le paiement s'effectue directement en caisse du supermarché partenaire ou en direct à la livraison du ou des plats.<br />
                   Pour les professionnels : les modalités de paiement sont définies dans le contrat de partenariat. 
                   Généralement, le paiement s'effectue par virement bancaire avec des délais de paiement convenus.
                 </p>
@@ -232,7 +233,7 @@ const Legal = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-3">Article 8 - Réclamations</h3>
                 <p>
                   Toute réclamation concernant la qualité ou la conformité de nos produits doit nous être signalée dans les 24 heures 
-                  suivant la livraison ou l'achat, en contactant notre service client au 07 68 07 97 64 ou par email à contact@delicego.com.
+                  suivant la livraison ou l'achat, en contactant notre service client par email à contact@delicego.com.
                 </p>
               </div>
 
