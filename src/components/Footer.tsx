@@ -23,7 +23,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Professionnels</h4>
             <ul className="space-y-2 text-sm opacity-90">
-              <li><a href="#" className="hover:text-secondary transition-colors">Devenir partenaire</a></li>
+              <li><a href="#contact" className="hover:text-secondary transition-colors">Devenir partenaire</a></li>
               <li><a href="#" className="hover:text-secondary transition-colors">Espace entreprise</a></li>
               <li><a href="#" className="hover:text-secondary transition-colors">Supermarchés</a></li>
             </ul>
@@ -32,9 +32,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Légal</h4>
             <ul className="space-y-2 text-sm opacity-90">
-              <li><a href="#" className="hover:text-secondary transition-colors">Mentions légales</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">Politique de confidentialité</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">CGV</a></li>
+              <li><a href="#mentions-legales" className="hover:text-secondary transition-colors">Mentions légales</a></li>
+              <li><a href="#confidentialite" className="hover:text-secondary transition-colors">Politique de confidentialité</a></li>
+              <li><a href="#cgv" className="hover:text-secondary transition-colors">CGV</a></li>
             </ul>
           </div>
         </div>

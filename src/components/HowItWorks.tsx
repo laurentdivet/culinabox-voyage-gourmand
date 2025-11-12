@@ -10,7 +10,7 @@ const steps = [
   {
     icon: Truck,
     title: "Livraison Quotidienne",
-    description: "Chaque jour, nos plats sont livrés frais dans nos supermarchés partenaires, prêts à être dégustés.",
+    description: "Chaque jour, nos plats sont livrés frais dans nos supermarchés partenaires, entreprises partenaires ou clients fidèles, prêts à être dégustés.",
   },
   {
     icon: ShoppingBag,
@@ -69,8 +69,7 @@ const HowItWorks = () => {
           <p className="text-muted-foreground text-center text-lg">
             Contrairement aux plats préparés industriels, Délice'Go propose une{" "}
             <span className="font-semibold text-foreground">cuisine fraîche, artisanale et multi-culturelle</span>,
-            en libre-service. Prix compétitifs + Distribution en grande surface + Fraîcheur garantie ={" "}
-            <span className="font-semibold text-secondary">Un modèle économique performant</span>.
+            en libre-service. Prix compétitifs + Distribution en grande surface + Fraîcheur garantie.
           </p>
         </div>
       </div>
