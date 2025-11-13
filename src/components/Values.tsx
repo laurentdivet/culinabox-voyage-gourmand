@@ -2,9 +2,9 @@ import { Leaf, Heart, Award, TrendingUp } from "lucide-react";
 
 const values = [
   {
-    icon: Leaf,
+    icon: Heart,
     title: "Produits Frais & Qualité",
-    description: "Ingrédients soigneusement sélectionnés, sourcing local à plus de 50% pour toutes nos recettes.",
+    description: "Ingrédients soigneusement sélectionnés, sourcing local à plus de 50% pour l'ensemble de nos plats.",
   },
   {
     icon: Heart,
