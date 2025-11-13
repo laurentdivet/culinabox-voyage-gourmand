@@ -10,6 +10,9 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
+    // Scroll en haut de la page au chargement initial
+    window.scrollTo(0, 0);
+    
     // Mise à jour des métadonnées pour le partage sur les réseaux sociaux
     document.title = "Délice'Go - Un Voyage Culinaire Livré Chaque Jour";
     
