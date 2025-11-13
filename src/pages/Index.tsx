@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Concept from "@/components/Concept";
 import Varieties from "@/components/Varieties";
@@ -10,22 +9,7 @@ import Legal from "@/components/Legal";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  const location = useLocation();
-  
   useEffect(() => {
-    // Nettoyer l'URL en enlevant le hash
-    if (window.location.hash) {
-      window.history.replaceState(null, '', window.location.pathname);
-    }
-    
-    // Empêcher la restauration automatique du scroll
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
-    }
-    
-    // Forcer le scroll en haut immédiatement
-    window.scrollTo(0, 0);
-    
     // Mise à jour des métadonnées pour le partage sur les réseaux sociaux
     document.title = "Délice'Go - Un Voyage Culinaire Livré Chaque Jour";
     
@@ -73,7 +57,7 @@ const Index = () => {
       }
       meta.setAttribute('content', tag.content);
     });
-  }, [location.hash]);
+  }, []);
 
   return (
     <div className="min-h-screen">
