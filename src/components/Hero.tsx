@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroFood from "@/assets/hero-food.jpg";
 import logo from "@/assets/delice-go-logo.png";
 
@@ -34,7 +35,7 @@ const Hero = () => {
               className="text-lg px-8 py-6 font-semibold"
               asChild
             >
-              <a href="#menu">Découvrir nos plats</a>
+              <Link to="/menu">Découvrir nos plats</Link>
             </Button>
             <Button
               size="lg"

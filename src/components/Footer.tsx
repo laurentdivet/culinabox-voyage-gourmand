@@ -91,49 +91,19 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Légal</h4>
             <ul className="space-y-2 text-sm opacity-90">
               <li>
-                <a 
-                  href="#mentions-legales" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById('mentions-legales');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                  className="hover:text-secondary transition-colors cursor-pointer"
-                >
+                <Link to="/legal#mentions-legales" className="hover:text-secondary transition-colors">
                   Mentions légales
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="#confidentialite" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById('confidentialite');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                  className="hover:text-secondary transition-colors cursor-pointer"
-                >
+                <Link to="/legal#confidentialite" className="hover:text-secondary transition-colors">
                   Politique de confidentialité
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="#cgv" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById('cgv');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                  className="hover:text-secondary transition-colors cursor-pointer"
-                >
+                <Link to="/legal#cgv" className="hover:text-secondary transition-colors">
                   CGV
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -5,7 +5,6 @@ import Varieties from "@/components/Varieties";
 import HowItWorks from "@/components/HowItWorks";
 import Values from "@/components/Values";
 import Contact from "@/components/Contact";
-import Legal from "@/components/Legal";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -67,7 +66,6 @@ const Index = () => {
       <HowItWorks />
       <Values />
       <Contact />
-      <Legal />
       <Footer />
     </div>
   );
