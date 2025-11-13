@@ -24,7 +24,7 @@ const Hero = () => {
             alt="Délice'Go Logo"
             className="w-[341px] h-[341px] mx-auto mb-8 drop-shadow-2xl"
           />
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-bold">
             Des plats frais et variés préparés quotidiennement dans notre laboratoire certifié,
             livrés dans vos supermarchés partenaires, ou tout simplement chez vous
           </p>
