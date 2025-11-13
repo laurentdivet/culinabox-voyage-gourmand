@@ -1,4 +1,4 @@
-import { Eye, Truck, ShoppingBag, ClipboardCheck, Award } from "lucide-react";
+import { Eye, Truck, ShoppingBag, ClipboardCheck } from "lucide-react";
 import labProduction from "@/assets/lab-production.jpg";
 
 const steps = [
@@ -20,12 +20,7 @@ const steps = [
   {
     icon: ClipboardCheck,
     title: "Commande & Livraison Directe",
-    description: "Gestion automatique des commandes en interne. Nos partenaires supermarchés et entreprises n'ont rien à gérer : nous nous occupons de tout, de la planification à la livraison.",
-  },
-  {
-    icon: Award,
-    title: "Traçabilité & Qualité",
-    description: "Plus de 50% de produits locaux et français, origine des ingrédients tracée et certifiée. Laboratoire certifié avec contrôles qualité réguliers pour votre sécurité.",
+    description: "Vous nous appelez et nous nous occupons du reste.",
   },
 ];
 

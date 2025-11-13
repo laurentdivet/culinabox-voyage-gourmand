@@ -22,11 +22,11 @@ const Hero = () => {
           <img
             src={logo}
             alt="Délice'Go Logo"
-            className="w-64 h-64 mx-auto mb-8 drop-shadow-2xl"
+            className="w-[341px] h-[341px] mx-auto mb-8 drop-shadow-2xl"
           />
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Des plats frais et variés préparés quotidiennement dans notre laboratoire certifié,
-            livrés dans vos supermarchés partenaires
+            livrés dans vos supermarchés partenaires, ou tout simplement chez vous
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

@@ -44,7 +44,7 @@ const Varieties = () => {
           {cuisines.map((cuisine, index) => (
             <div
               key={index}
-              className="bg-card p-8 rounded-xl shadow-md border border-border hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="bg-card p-8 rounded-xl shadow-md border border-border hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
             >
               <div className="text-6xl mb-4">{cuisine.emoji}</div>
               <h3 className="text-xl font-bold text-card-foreground mb-3">
