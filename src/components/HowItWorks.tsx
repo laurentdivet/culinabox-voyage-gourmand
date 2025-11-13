@@ -78,8 +78,7 @@ const HowItWorks = () => {
           </h3>
           <p className="text-muted-foreground text-center text-lg">
             Contrairement aux plats préparés industriels, Délice'Go propose une{" "}
-            <span className="font-semibold text-foreground">cuisine fraîche, artisanale et multi-culturelle</span>,
-            en libre-service. Prix compétitifs + Distribution en grande surface + Fraîcheur garantie.
+            <span className="font-semibold text-foreground">cuisine fraîche, artisanale et multi-culturelle</span> en libre-service avec prix compétitifs et fraîcheur garantie.
           </p>
         </div>
       </div>
