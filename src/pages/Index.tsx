@@ -13,10 +13,10 @@ const Index = () => {
   const location = useLocation();
   
   useEffect(() => {
-    // Scroll en haut de la page au chargement initial uniquement si pas de hash
-    if (!location.hash) {
-      window.scrollTo(0, 0);
-    }
+    // Toujours scroller en haut au chargement
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 0);
     
     // Mise à jour des métadonnées pour le partage sur les réseaux sociaux
     document.title = "Délice'Go - Un Voyage Culinaire Livré Chaque Jour";
