@@ -45,7 +45,7 @@ const MenuPage = () => {
     <div className="min-h-screen bg-background">
       {/* Header de la page */}
       <div className="bg-primary text-primary-foreground py-12">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 text-center">
           <Link to="/">
             <Button variant="ghost" className="mb-4 text-primary-foreground hover:text-primary-foreground/80">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -55,7 +55,7 @@ const MenuPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Notre Carte
           </h1>
-          <p className="text-xl opacity-90 max-w-3xl">
+          <p className="text-xl opacity-90 max-w-3xl mx-auto">
             Découvrez notre sélection de plats frais, préparés quotidiennement avec passion
           </p>
         </div>
@@ -63,19 +63,6 @@ const MenuPage = () => {
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          {/* Filtres par catégorie */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((category) => (
-              <Badge
-                key={category}
-                variant="secondary"
-                className="px-4 py-2 cursor-pointer hover:bg-secondary/80 transition-colors text-sm"
-              >
-                {category}
-              </Badge>
-            ))}
-          </div>
-
           {/* Grille de plats */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {dishes.map((dish) => (
@@ -149,7 +136,7 @@ const MenuPage = () => {
                 📅 Date limite de consommation indiquée sur chaque produit
               </p>
               <p>
-                ℹ️ Pour toute information sur les allergènes, contactez-nous à contact@delicego.com
+                ℹ️ Pour toute information sur les allergènes, consultez l'étiquette de votre produit
               </p>
             </div>
           </div>
