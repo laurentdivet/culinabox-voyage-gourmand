@@ -13,10 +13,13 @@ const Index = () => {
   const location = useLocation();
   
   useEffect(() => {
-    // Toujours scroller en haut au chargement
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'instant' });
-    }, 0);
+    // Empêcher la restauration automatique du scroll
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    // Forcer le scroll en haut immédiatement
+    window.scrollTo(0, 0);
     
     // Mise à jour des métadonnées pour le partage sur les réseaux sociaux
     document.title = "Délice'Go - Un Voyage Culinaire Livré Chaque Jour";
