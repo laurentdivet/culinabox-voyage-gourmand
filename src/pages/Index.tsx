@@ -13,6 +13,11 @@ const Index = () => {
   const location = useLocation();
   
   useEffect(() => {
+    // Nettoyer l'URL en enlevant le hash
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+    
     // Empêcher la restauration automatique du scroll
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
